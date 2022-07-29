@@ -1,6 +1,7 @@
 package net.krojiak.whatwhocaaares;
 
 import net.fabricmc.api.ModInitializer;
+import net.krojiak.whatwhocaaares.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,5 +11,6 @@ public class whatwhocaaares implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
