@@ -1,0 +1,14 @@
+{
+  "item.whatwhocaaares.raw_bauxite": "Raw Bauxite",
+  "item.whatwhocaaares.raw_alunite": "Raw Alunite",
+  "item.whatwhocaaares.nepheline_crystal": "Nepheline Crystal",
+  "item.whatwhocaaares.syenite_shard": "Shard of Syenite",
+  "item.whatwhocaaares.alumina": "Alumina",
+
+  "block.whatwhocaaares.raw_bauxite_block": "Block of Raw Bauxite",
+
+  "itemGroup.whatwhocaaares.environment": "Environment",
+  "itemGroup.whatwhocaaares.astrology": "Astrology",
+  "itemGroup.whatwhocaaares.production": "Production",
+  "itemGroup.whatwhocaaares.nightosphere": "Nightosphere"
+}

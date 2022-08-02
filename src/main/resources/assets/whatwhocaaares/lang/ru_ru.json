@@ -1,0 +1,14 @@
+{
+  "item.whatwhocaaares.raw_bauxite": "Рудной боксит",
+  "item.whatwhocaaares.raw_alunite": "Рудной алунит",
+  "item.whatwhocaaares.nepheline_crystal": "Нефелиновый кристалл",
+  "item.whatwhocaaares.syenite_shard": "Осколок сиенита",
+  "item.whatwhocaaares.alumina": "Глинозём",
+
+  "block.whatwhocaaares.raw_bauxite_block": "Блок рудного боксита",
+
+  "itemGroup.whatwhocaaares.environment": "Окружение",
+  "itemGroup.whatwhocaaares.astrology": "Астрология",
+  "itemGroup.whatwhocaaares.production": "Производство",
+  "itemGroup.whatwhocaaares.nightosphere": "Темносфера"
+}
