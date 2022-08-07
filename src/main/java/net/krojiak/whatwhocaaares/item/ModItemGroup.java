@@ -8,13 +8,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-
-    public static final ItemGroup ENVIRONMENT = registerItemGroup("environment", ModItems.RAW_BAUXITE);
-    public static final ItemGroup ASTROLOGY = registerItemGroup("astrology", ModItems.NEPHELINE_CRYSTAL);
-    public static final ItemGroup PRODUCTION = registerItemGroup("production", ModItems.ALUMINA);
-    public static final ItemGroup NIGHTOSPHERE = registerItemGroup("nightosphere", ModItems.SYENITE_SHARD);
-
-    private static ItemGroup registerItemGroup(String name, Item item){
-        return FabricItemGroupBuilder.build(new Identifier(whatwhocaaares.MOD_ID, name), () -> new ItemStack(item));
-    }
+    public static final ItemGroup ENVIRONMENT = FabricItemGroupBuilder.build(new Identifier(whatwhocaaares.MOD_ID, "environment"),
+            () -> new ItemStack(ModItems.RAW_BAUXITE));
+    public static final ItemGroup ASTROLOGY = FabricItemGroupBuilder.build(new Identifier(whatwhocaaares.MOD_ID, "astrology"),
+            () -> new ItemStack(ModItems.NEPHELINE_CRYSTAL));
+    public static final ItemGroup PRODUCTION = FabricItemGroupBuilder.build(new Identifier(whatwhocaaares.MOD_ID, "production"),
+            () -> new ItemStack(ModItems.ALUMINA));
+    public static final ItemGroup NIGHTOSPHERE = FabricItemGroupBuilder.build(new Identifier(whatwhocaaares.MOD_ID, "nightosphere"),
+            () -> new ItemStack(ModItems.SYENITE_SHARD));
 }

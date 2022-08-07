@@ -5,7 +5,14 @@
   "item.whatwhocaaares.syenite_shard": "Shard of Syenite",
   "item.whatwhocaaares.alumina": "Alumina",
 
+  "block.whatwhocaaares.bauxite_ore": "Bauxite Ore",
   "block.whatwhocaaares.raw_bauxite_block": "Block of Raw Bauxite",
+  "block.whatwhocaaares.alunite_ore": "Alunite Ore",
+  "block.whatwhocaaares.raw_alunite_block": "Block of Raw Alunite",
+  "block.whatwhocaaares.nepheline_syenite": "Nepheline Syenite",
+  "block.whatwhocaaares.nepheline": "Nepheline",
+  "block.whatwhocaaares.syenite": "Syenite",
+  "block.whatwhocaaares.alumina_block": "Block of Alumina",
 
   "itemGroup.whatwhocaaares.environment": "Environment",
   "itemGroup.whatwhocaaares.astrology": "Astrology",

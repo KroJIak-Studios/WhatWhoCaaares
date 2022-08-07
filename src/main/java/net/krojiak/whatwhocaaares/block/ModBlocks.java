@@ -2,30 +2,49 @@ package net.krojiak.whatwhocaaares.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.krojiak.whatwhocaaares.block.custom.ModFluidBlock;
+import net.krojiak.whatwhocaaares.fluid.ModFluids;
 import net.krojiak.whatwhocaaares.item.ModItemGroup;
+import net.krojiak.whatwhocaaares.item.ModItems;
 import net.krojiak.whatwhocaaares.whatwhocaaares;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static net.minecraft.block.Blocks.*;
+
 
 public class ModBlocks {
-    public static final Block RAW_BAUXITE_BLOCK =
-            registerBlock("raw_bauxite_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.ENVIRONMENT);
-    public static final Block RAW_ALUNITE_BLOCK =
-            registerBlock("raw_alunite_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.ENVIRONMENT);
-    public static final Block NEPHELINE_BLOCK =
-            registerBlock("nepheline_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.ENVIRONMENT);
-    public static final Block SYENITE_BLOCK =
-            registerBlock("syenite_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.ENVIRONMENT);
-    public static final Block ALUMINA_BLOCK =
-            registerBlock("alumina_block", new Block(FabricBlockSettings.of(Material.AGGREGATE).strength(1f)), ModItemGroup.PRODUCTION);
+    public static final Block BAUXITE_ORE = registerBlock("bauxite_ore",
+            new OreBlock(FabricBlockSettings.copyOf(IRON_ORE).requiresTool()), ModItemGroup.ENVIRONMENT);
 
+    public static final Block RAW_BAUXITE_BLOCK = registerBlock("raw_bauxite_block",
+            new Block(FabricBlockSettings.copyOf(RAW_IRON_BLOCK).requiresTool()), ModItemGroup.ENVIRONMENT);
 
+    public static final Block ALUNITE_ORE = registerBlock("alunite_ore",
+            new OreBlock(FabricBlockSettings.copyOf(IRON_ORE).requiresTool()), ModItemGroup.ENVIRONMENT);
+
+    public static final Block RAW_ALUNITE_BLOCK = registerBlock("raw_alunite_block",
+            new Block(FabricBlockSettings.copyOf(RAW_IRON_BLOCK).requiresTool()), ModItemGroup.ENVIRONMENT);
+
+    public static final Block NEPHELINE_SYENITE = registerBlock("nepheline_syenite",
+            new OreBlock(FabricBlockSettings.copyOf(IRON_ORE).requiresTool()), ModItemGroup.ENVIRONMENT);
+
+    public static final Block NEPHELINE = registerBlock("nepheline",
+            new Block(FabricBlockSettings.copyOf(LAPIS_BLOCK).requiresTool()), ModItemGroup.ENVIRONMENT);
+
+    public static final Block SYENITE  = registerBlock("syenite",
+            new Block(FabricBlockSettings.copyOf(LAPIS_BLOCK).requiresTool()), ModItemGroup.ENVIRONMENT);
+
+    public static final Block ALUMINA_BLOCK = registerBlock("alumina_block",
+            new FallingBlock(FabricBlockSettings.copyOf(SAND)), ModItemGroup.PRODUCTION);
+
+    public static final Block SULPHURIC_ACID = registerBlock("sulphuric_acid",
+            new ModFluidBlock(Fluids.WATER, FabricBlockSettings.of(Material.WATER).noCollision().nonOpaque().dropsNothing()), ModItemGroup.ENVIRONMENT);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group){

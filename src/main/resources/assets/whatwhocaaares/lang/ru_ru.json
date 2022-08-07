@@ -5,7 +5,14 @@
   "item.whatwhocaaares.syenite_shard": "Осколок сиенита",
   "item.whatwhocaaares.alumina": "Глинозём",
 
+  "block.whatwhocaaares.bauxite_ore": "Бокситовая руда",
   "block.whatwhocaaares.raw_bauxite_block": "Блок рудного боксита",
+  "block.whatwhocaaares.alunite_ore": "Алунитовая руда",
+  "block.whatwhocaaares.raw_alunite_block": "Блок рудного алунита",
+  "block.whatwhocaaares.nepheline_syenite": "Нефелиновый сиенит",
+  "block.whatwhocaaares.nepheline": "Нефелин",
+  "block.whatwhocaaares.syenite": "Сиенит",
+  "block.whatwhocaaares.alumina_block": "Блок чернозёма",
 
   "itemGroup.whatwhocaaares.environment": "Окружение",
   "itemGroup.whatwhocaaares.astrology": "Астрология",
