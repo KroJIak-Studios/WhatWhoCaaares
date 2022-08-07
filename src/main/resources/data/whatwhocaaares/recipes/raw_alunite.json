@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "whatwhocaaares:raw_bauxite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "whatwhocaaares:raw_bauxite"
+  }
+}

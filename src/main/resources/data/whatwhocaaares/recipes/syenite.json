@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "whatwhocaaares:syenite_shard"
+    }
+  },
+  "result": {
+    "item": "whatwhocaaares:syenite"
+  }
+}

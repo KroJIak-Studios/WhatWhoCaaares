@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "whatwhocaaares:bauxite_ore",
+    "whatwhocaaares:raw_bauxite_block",
+    "whatwhocaaares:alunite_ore",
+    "whatwhocaaares:raw_alunite_block",
+    "whatwhocaaares:nepheline_syenite",
+    "whatwhocaaares:nepheline",
+    "whatwhocaaares:syenite",
+    "whatwhocaaares:alumina_block"
+  ]
+}
