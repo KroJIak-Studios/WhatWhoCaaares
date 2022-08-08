@@ -16,6 +16,5 @@ public class whatwhocaaares implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModFluids.registerModFluids();
 	}
 }

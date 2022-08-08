@@ -6,14 +6,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModFluids {
-    public static final FlowableFluid FLOWING_SULPHURIC_ACID = registerFluid("flowing_sulphuric_acid", new SulphuricAcidFluid.Still());
-    public static final FlowableFluid SULPHURIC_ACID = registerFluid("sulphuric_acid", new SulphuricAcidFluid.Still());
+    public static final FlowableFluid SULPHURIC_ACID_STILL = registerFluid("sulphuric_acid_still", new SulphuricAcidFluid.Still());
+    public static final FlowableFluid SULPHURIC_ACID_FLOWING = registerFluid("sulphuric_acid_flowing", new SulphuricAcidFluid.Flowing());
 
     private static FlowableFluid registerFluid(String name, FlowableFluid flowableFluid){
         return Registry.register(Registry.FLUID, new Identifier(whatwhocaaares.MOD_ID, name), flowableFluid);
     }
 
-    public static void registerModFluids(){
-        whatwhocaaares.LOGGER.debug("Registering Mod Fluids for " + whatwhocaaares.MOD_ID);
-    }
 }

@@ -32,11 +32,11 @@ import java.util.Random;
 public abstract class SulphuricAcidFluid extends FlowableFluid {
 
     public Fluid getFlowing() {
-        return ModFluids.FLOWING_SULPHURIC_ACID;
+        return ModFluids.SULPHURIC_ACID_FLOWING;
     }
 
     public Fluid getStill() {
-        return ModFluids.SULPHURIC_ACID;
+        return ModFluids.SULPHURIC_ACID_STILL;
     }
 
     public Item getBucketItem() {
@@ -84,7 +84,7 @@ public abstract class SulphuricAcidFluid extends FlowableFluid {
     }
 
     public boolean matchesType(Fluid fluid) {
-        return fluid == ModFluids.SULPHURIC_ACID || fluid == ModFluids.FLOWING_SULPHURIC_ACID;
+        return fluid == ModFluids.SULPHURIC_ACID_STILL || fluid == ModFluids.SULPHURIC_ACID_FLOWING;
     }
 
     public int getLevelDecreasePerBlock(WorldView world) {
@@ -126,7 +126,7 @@ public abstract class SulphuricAcidFluid extends FlowableFluid {
     public static class Still extends SulphuricAcidFluid {
 
         public int getLevel(FluidState state) {
-            return 8;
+            return 6;
         }
 
         public boolean isStill(FluidState state) {
