@@ -2,5 +2,20 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "whatwhocaaares:item/elegant_stylet"
-  }
+  },
+  "display": {},
+  "overrides": [
+    {
+      "predicate": {
+        "whatwhocaaares:soul": 1
+      },
+      "model": "item/elegant_stylet_with_spirit"
+    },
+    {
+      "predicate": {
+        "whatwhocaaares:soul": 2
+      },
+      "model": "item/elegant_stylet_with_demon"
+    }
+  ]
 }

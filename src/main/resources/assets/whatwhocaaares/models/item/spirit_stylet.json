@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "whatwhocaaares:item/spirit_stylet"
+  }
+}

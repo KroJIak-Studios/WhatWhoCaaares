@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.krojiak.whatwhocaaares.fluid.ModFluids;
 import net.krojiak.whatwhocaaares.item.custom.DemonStyletItem;
 import net.krojiak.whatwhocaaares.item.custom.ElegantStyletItem;
+import net.krojiak.whatwhocaaares.item.custom.SpiritStyletItem;
 import net.krojiak.whatwhocaaares.whatwhocaaares;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.*;
@@ -20,12 +21,19 @@ public class ModItems {
             new BucketItem(ModFluids.SULPHURIC_ACID_STILL, new FabricItemSettings().maxCount(1).group(ModItemGroup.ENVIRONMENT)));
     public static final Item ELEGANT_STYLET = registerItem("elegant_stylet",
             new ElegantStyletItem(new FabricItemSettings().maxCount(1).maxDamage(8).group(ModItemGroup.NIGHTOSPHERE)));
+    public static final Item SPIRIT_STYLET = registerItem("spirit_stylet",
+            new SpiritStyletItem(new FabricItemSettings().maxCount(1).maxDamage(128).group(ModItemGroup.NIGHTOSPHERE)));
+    public static final Item DEMON_STYLET = registerItem("demon_stylet",
+            new DemonStyletItem(new FabricItemSettings().maxCount(1).maxDamage(128).group(ModItemGroup.NIGHTOSPHERE)));
     public static final Item SCARLET_APPLE = registerItem("scarlet_apple",
             new Item(new FabricItemSettings().food(ModFoods.SCARLET_APPLE).group(ModItemGroup.NIGHTOSPHERE)));
     public static final Item DEMON_APPLE = registerItem("demon_apple",
             new Item(new FabricItemSettings().food(ModFoods.DEMON_APPLE).group(ModItemGroup.NIGHTOSPHERE)));
-    public static final Item DEMON_STYLET = registerItem("demon_stylet",
-            new DemonStyletItem(new FabricItemSettings().maxCount(1).maxDamage(128).group(ModItemGroup.NIGHTOSPHERE)));
+    public static final Item TIRED_APPLE = registerItem("tired_apple",
+            new Item(new FabricItemSettings().food(ModFoods.TIRED_APPLE).group(ModItemGroup.NIGHTOSPHERE)));
+    public static final Item SPIRIT_APPLE = registerItem("spirit_apple",
+            new Item(new FabricItemSettings().food(ModFoods.TIRED_APPLE).group(ModItemGroup.NIGHTOSPHERE)));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(whatwhocaaares.MOD_ID, name), item);

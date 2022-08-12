@@ -12,6 +12,7 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -46,6 +47,16 @@ public class ModBlocks {
     public static final Block SULPHURIC_ACID = registerBlock("sulphuric_acid",
             new ModFluidBlock(ModFluids.SULPHURIC_ACID_STILL, FabricBlockSettings.of(Material.WATER).noCollision().nonOpaque().dropsNothing()),
             false, ModItemGroup.ENVIRONMENT);
+
+    public static final Block SPIRIT_SYMBOL = registerBlock("spirit_symbol",
+            new CarpetBlock(FabricBlockSettings.of(Material.STONE).noCollision().nonOpaque().dropsNothing().breakInstantly()),
+            false, ModItemGroup.NIGHTOSPHERE);
+
+    public static final Block DEMON_SYMBOL = registerBlock("demon_symbol",
+            new CarpetBlock(FabricBlockSettings.of(Material.STONE).noCollision().nonOpaque().dropsNothing().breakInstantly()),
+            false, ModItemGroup.NIGHTOSPHERE);
+
+
 
 
     private static Block registerBlock(String name, Block block, boolean addGroup, ItemGroup group){

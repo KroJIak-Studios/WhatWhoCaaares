@@ -6,9 +6,14 @@
   "item.whatwhocaaares.alumina": "Глинозём",
   "item.whatwhocaaares.sulphuric_acid_bucket": "Ведро серной кислоты",
   "item.whatwhocaaares.elegant_stylet": "Элегантный стилет",
+  "item.whatwhocaaares.demon_stylet": "Демонический стилет",
+  "item.whatwhocaaares.spirit_stylet": "Стилет духов",
   "item.whatwhocaaares.scarlet_apple": "Алое яблоко",
   "item.whatwhocaaares.demon_apple": "Демоническое яблоко",
-  "item.whatwhocaaares.demon_stylet": "Демонический стилет",
+  "item.whatwhocaaares.tired_apple": "Уставшее яблоко",
+  "item.whatwhocaaares.spirit_apple": "Яблоко духов",
+
+  "item.whatwhocaaares.elegant_stylet.tooltip": "Наполняется: ",
 
   "block.whatwhocaaares.bauxite_ore": "Бокситовая руда",
   "block.whatwhocaaares.raw_bauxite_block": "Блок рудного боксита",
